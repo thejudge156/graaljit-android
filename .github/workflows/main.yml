@@ -16,4 +16,4 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Compile 
         run: |
-          native-image --target=linux-aarch64 --shared --native-compiler-path=$ANDROID_NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -cp graal.jar:truffle-compiler.jar:collections.jar:words.jar
+          native-image --target=android-aarch64 --shared --native-compiler-path=$ANDROID_NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -cp graal.jar:truffle-compiler.jar:collections.jar:words.jar
